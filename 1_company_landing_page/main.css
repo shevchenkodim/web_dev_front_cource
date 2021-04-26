@@ -24,10 +24,36 @@ a {
     text-decoration: none;
 }
 
+.div-circle {
+    height: 170px;
+    width: 170px;
+    background-color: black;
+    border-radius: 50%;
+    border: 4px solid white;
+    display: block;
+}
+
+.card-image {
+    padding: 10px 10px;
+}
+
+.card-text {
+    padding: 10px 10px;
+}
+
+.card-padding {
+    padding-top: 15px !important;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-height: 170px;
+    max-width: 170px;
+}
+
 .block-line {
     border-left: 4px solid white;
     height: 100%;
-    position: absolute;
 }
 
 .block-circles {
@@ -52,6 +78,10 @@ a {
     position: absolute;
 }
 
+.block-image-house {
+    position: relative;
+}
+
 .header-center-block {
     padding-top: 200px !important;
     padding-bottom: 200px !important;
@@ -63,9 +93,34 @@ button {
     background-color: white;
 }
 
+.text-gray {
+    color: #808080;
+}
+
 .block-timeline {
     background: black;
     color: white;
+}
+
+.block-team {
+
+}
+
+.block-top-services {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to right bottom, white 50%, black 50%);
+}
+
+.block-our-blog {
+    background: black;
+    color: white;
+}
+
+.block-bottom-services {
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(to right bottom, black 50%, white 50%);
 }
 
 .wrapper {
@@ -76,6 +131,7 @@ button {
 }
 
 .container {
+    max-height: 100%;
     max-width: 940px;
     margin: 0 auto;
     padding: 0 30px;
@@ -195,6 +251,10 @@ button {
 }
 
 @media screen and (min-width: 576px){
+    .card-padding-xs {
+        padding-top: 15px !important;
+    }
+
     .col-xs-1{
         width: calc(100% / 12 * 1 - 30px);
     }
@@ -246,6 +306,10 @@ button {
 }
 
 @media screen and (min-width: 700px){
+    .card-padding-sm {
+        padding-top: 100px !important;
+    }
+
     .col-sm-1{
         width: calc(100% / 12 * 1 - 30px);
     }
@@ -297,6 +361,10 @@ button {
 }
 
 @media screen and (min-width: 992px){
+    .card-padding-md {
+        padding-top: 100px !important;
+    }
+
     .col-md-1{
         width: calc(100% / 12 * 1 - 30px);
     }
@@ -348,6 +416,10 @@ button {
 }
 
 @media screen and (min-width: 1200px){
+    .card-padding-lg {
+        padding-top: 100px !important;
+    }
+
     .col-lg-1{
         width: calc(100% / 12 * 1 - 30px);
     }
@@ -399,6 +471,10 @@ button {
 }
 
 @media screen and (min-width: 1400px){
+    .card-padding-xl {
+        padding-top: 100px !important;
+    }
+
     .col-xl-1{
         width: calc(100% / 12 * 1 - 30px);
     }
