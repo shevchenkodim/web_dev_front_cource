@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="">
+
+  <title>Why Lemure</title>
+  <meta name="description" content=""/>
+  <meta name="keywords" content=""/>
+
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="#" class="header__logo">
+              <img src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__burger"
+                 v-bind:class="{'active': data.burger_menu}"
+                 v-on:click.prevent="do_click_burger()"
+            >
+              <span></span>
+            </div>
+            <nav class="header_menu"
+                 v-bind:class="{'active': data.burger_menu}"
+            >
+              <ul class="header__list">
+                <li>
+                  <a href="" class="header_link">Welcome</a>
+                </li>
+                <li>
+                  <a href="" class="header_link">Technologies</a>
+                </li>
+                <li>
+                  <a href="" class="header_link">About us</a>
+                </li>
+                <li>
+                  <a href="" class="header_link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="container">
+          <div class="content_text">
+            <p>asdasdsadasd asd asdasd asd asd asdas asda sda das</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/v-mask/dist/v-mask.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="application/javascript">
+    Vue.config.devtools = true
+    window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = Vue;
+
+    Vue.use(VueMask.VueMaskPlugin);
+
+    const True = true, False = false
+
+     let app = new Vue({
+        el: '#app',
+        data: {
+            data: {
+              burger_menu: false
+            },
+            state: {
+            },
+            urls: {
+            }
+        },
+        methods: {
+          do_click_burger() {
+            this.data.burger_menu = !this.data.burger_menu
+            $('body').toggleClass('lock')
+          }
+        },
+        created: function() {
+        }
+    });
+  </script>
+</body>
+
+</html>
