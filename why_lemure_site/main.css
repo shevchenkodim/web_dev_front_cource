@@ -10,7 +10,7 @@ html, body {
     flex-direction: column;
 }
 
-.container {
+._container {
     max-height: 100%;
     max-width: 940px;
     margin: 0 auto;
@@ -63,6 +63,8 @@ html, body {
 .header__list {
     display: flex;
     position: relative;
+    align-items: center;
+    margin-bottom: 0;
     z-index: 2;
 }
 .header__list li {
@@ -82,7 +84,97 @@ html, body {
 
 .content_text {}
 
+.title-why {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+    right: -10px;
+}
+.title-lemur {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 90px;
+    right: 20px;
+}
+
+.img-lemur {
+    max-height: 300px;
+    position: relative;
+}
+
+.btn-contact-us {
+    background: #1EB19D!important;
+    font-weight: bold!important;
+    color: black!important;
+}
+
+.btn-contact-us-nav {
+    background: black!important;
+    font-weight: bold!important;
+    color: white!important;
+    border-radius: 15px 0 12px 0!important;
+    border-color: #1EB19D!important;
+}
+
+.div-welcome-text {
+
+}
+
+.contact-us-fixed {
+    display: none!important;
+}
+
+.technologies {
+    background-image: url(img/poligon.png);
+}
+
 @media (max-width: 767px) {
+    .contact-us-fixed {
+        border-radius: 50% !important;
+        width: 60px!important;
+        height: 60px!important;
+        display: block!important;
+        position: fixed!important;
+        bottom: 30px!important;
+        right: 30px!important;
+        color: #1EB19D!important;
+        border-color: #1EB19D!important;
+    }
+    .contact-us-fixed.active {
+        background-color: black!important;
+        border-color: black!important;
+        color: white!important;
+    }
+
+    .img-lemur {
+        max-height: 300px;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .title-why {
+        top: 13px;
+        right: -15px;
+    }
+    .title-lemur {
+        top: 90px;
+        right: 30px;
+    }
+
+    .btn-contact-us-nav {
+        background: white!important;
+        font-weight: bold!important;
+        color: black!important;
+        border-radius: 15px 0 12px 0!important;
+        border-color: #1EB19D!important;
+    }
+
+    .div-welcome-text {
+        display: none!important;
+    }
+
     body.lock {
         overflow: hidden;
     }
@@ -156,13 +248,14 @@ html, body {
 
     .header__list {
         display: block;
+        padding-top: 20px;
     }
     .header__list li {
         margin: 0px 0px 20px 0px;
     }
 
     .content {
-        padding-top: 70px;
+        padding-top: 50px;
     }
 
     .header_link {
