@@ -1,0 +1,11 @@
+#game td {
+ width: 50px; /* ширина клітинки */
+ height: 50px; /* висота клітинки */
+ border: 1px solid black; /*рамка довкола клітинки*/
+ text-align: center; /*вирівнювання тексту в клітинці*/
+ cursor: pointer; /*зміна курсора над клітинкою*/
+}
+
+.active {
+ background-color: lightgreen;
+}
