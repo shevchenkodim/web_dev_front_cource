@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.container {
+    max-height: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    min-height: 750px;
+    background-image: url(img/head_image_bg.jpg);
+    background-position: center;
+    background-size: auto;
+}
