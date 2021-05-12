@@ -18,3 +18,31 @@
     background-position: center;
     background-size: auto;
 }
+
+.block-this-is-bouncy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.block-detail-about-bouncy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightgrey;
+}
+
+.block-featured-projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.with-button-second-part {
+    display: flex;
+}
+.button-second-part {
+    border: 1px solid black;
+    padding: 3px 10px;
+    border-radius: 35px;
+    background-color: white;
+}
